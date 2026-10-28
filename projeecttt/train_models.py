@@ -21,8 +21,9 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, E
 from xgboost import XGBRegressor
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
-DATASET_PATH = "plga_dataset.csv"
-OUTPUT_DIR = "models"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATASET_PATH = os.path.join(BASE_DIR, "plga_dataset.csv")
+OUTPUT_DIR = os.path.join(BASE_DIR, "models")
 
 FORMULATION_FEATURES = [
     'polymer_MW',

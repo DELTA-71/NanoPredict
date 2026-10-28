@@ -157,42 +157,53 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# Absolute base path resolution for local and cloud deployment (Streamlit Community Cloud)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODELS_DIR = os.path.join(BASE_DIR, "models")
+DATASET_PATH = os.path.join(BASE_DIR, "plga_dataset.csv")
+
 # Resource loaders
 @st.cache_resource
 def load_designer():
     from inverse_optimizer import PLGANanoparticleInverseDesigner
-    if os.path.exists("models/metadata.json") and os.path.exists("models/scaler.pkl"):
-        return PLGANanoparticleInverseDesigner("models", "plga_dataset.csv")
+    meta_path = os.path.join(MODELS_DIR, "metadata.json")
+    scaler_path = os.path.join(MODELS_DIR, "scaler.pkl")
+    if os.path.exists(meta_path) and os.path.exists(scaler_path):
+        return PLGANanoparticleInverseDesigner(MODELS_DIR, DATASET_PATH)
     return None
 
 @st.cache_data
 def load_metadata():
-    if os.path.exists("models/metadata.json"):
-        with open("models/metadata.json", "r") as f:
+    p = os.path.join(MODELS_DIR, "metadata.json")
+    if os.path.exists(p):
+        with open(p, "r") as f:
             return json.load(f)
     return None
 
 def load_evaluation_metrics():
-    if os.path.exists("models/evaluation_metrics.json"):
-        with open("models/evaluation_metrics.json", "r") as f:
+    p = os.path.join(MODELS_DIR, "evaluation_metrics.json")
+    if os.path.exists(p):
+        with open(p, "r") as f:
             return json.load(f)
     return None
 
 def load_feature_importances():
-    if os.path.exists("models/feature_importances.json"):
-        with open("models/feature_importances.json", "r") as f:
+    p = os.path.join(MODELS_DIR, "feature_importances.json")
+    if os.path.exists(p):
+        with open(p, "r") as f:
             return json.load(f)
     return None
 
 def load_hyperparameters():
-    if os.path.exists("models/hyperparameters_summary.json"):
-        with open("models/hyperparameters_summary.json", "r") as f:
+    p = os.path.join(MODELS_DIR, "hyperparameters_summary.json")
+    if os.path.exists(p):
+        with open(p, "r") as f:
             return json.load(f)
     return None
 
 def load_plga_dataset():
-    if os.path.exists("plga_dataset.csv"):
-        df = pd.read_csv("plga_dataset.csv")
+    if os.path.exists(DATASET_PATH):
+        df = pd.read_csv(DATASET_PATH)
         unwanted = [
             'data_origin', 'source_dataset_doi', 'source_dataset_url',
             'source_data_descriptor_doi', 'source_data_descriptor_url',

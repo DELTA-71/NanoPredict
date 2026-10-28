@@ -26,8 +26,22 @@ NORMALIZED_DEFAULT_DRUG = {
     'mol_heteroatoms': 6
 }
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_MODELS_DIR = os.path.join(BASE_DIR, "models")
+DEFAULT_DATASET_PATH = os.path.join(BASE_DIR, "plga_dataset.csv")
+
 class PLGANanoparticleInverseDesigner:
-    def __init__(self, models_dir="models", data_path="plga_dataset.csv"):
+    def __init__(self, models_dir=None, data_path=None):
+        if models_dir is None:
+            models_dir = DEFAULT_MODELS_DIR
+        elif not os.path.isabs(models_dir):
+            models_dir = os.path.join(BASE_DIR, models_dir)
+
+        if data_path is None:
+            data_path = DEFAULT_DATASET_PATH
+        elif not os.path.isabs(data_path):
+            data_path = os.path.join(BASE_DIR, data_path)
+
         self.models_dir = models_dir
         self.scaler = joblib.load(os.path.join(models_dir, "scaler.pkl"))
         
