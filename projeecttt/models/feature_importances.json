@@ -1,0 +1,53 @@
+{
+    "particle_size": {
+        "polymer_MW": 0.056831850785549955,
+        "LA/GA": 0.2336766452553738,
+        "drug/polymer": 0.11693863447540147,
+        "surfactant_concentration": 0.05345473128465113,
+        "surfactant_HLB": 0.020556473855741112,
+        "aqueous/organic": 0.045042865221510534,
+        "pH": 0.10542057667124952,
+        "solvent_polarity_index": 0.050751871939428525,
+        "mol_MW": 0.06531976913373676,
+        "mol_logP": 0.023104595505662486,
+        "mol_TPSA": 0.03671536781746183,
+        "mol_melting_point": 0.061959849519483766,
+        "mol_Hacceptors": 0.08176644808134409,
+        "mol_Hdonors": 0.03484010956078705,
+        "mol_heteroatoms": 0.013620210892617968
+    },
+    "EE": {
+        "polymer_MW": 0.20998197432809745,
+        "LA/GA": 0.0013589148397017126,
+        "drug/polymer": 0.07527110313367905,
+        "surfactant_concentration": 0.14639827201556688,
+        "surfactant_HLB": 0.1576929653960997,
+        "aqueous/organic": 0.039892552841204854,
+        "pH": 0.005283018545472384,
+        "solvent_polarity_index": 0.006394617707914648,
+        "mol_MW": 0.0492786123551551,
+        "mol_logP": 0.060036310446351986,
+        "mol_TPSA": 0.060672775258917205,
+        "mol_melting_point": 0.0546292680062243,
+        "mol_Hacceptors": 0.07126318282636988,
+        "mol_Hdonors": 0.013172534120033533,
+        "mol_heteroatoms": 0.04867389817921139
+    },
+    "LC": {
+        "polymer_MW": 0.013308741894575017,
+        "LA/GA": 6.736644138226236e-06,
+        "drug/polymer": 0.864698501530455,
+        "surfactant_concentration": 0.020355483693904573,
+        "surfactant_HLB": 0.005113993321198184,
+        "aqueous/organic": 0.00656237733741212,
+        "pH": 0.002070426150253955,
+        "solvent_polarity_index": 0.0013566618064559965,
+        "mol_MW": 0.037204690804103,
+        "mol_logP": 0.011655904883208909,
+        "mol_TPSA": 0.0040245302727394665,
+        "mol_melting_point": 0.024307386832455806,
+        "mol_Hacceptors": 0.002823621640940967,
+        "mol_Hdonors": 0.004817677182161483,
+        "mol_heteroatoms": 0.0016932660059972844
+    }
+}

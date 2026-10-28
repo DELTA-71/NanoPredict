@@ -1,0 +1,508 @@
+{
+    "dataset": "plga_dataset.csv",
+    "source_doi": "10.1038/s41597-025-05520-9",
+    "formulation_features": [
+        "polymer_MW",
+        "LA/GA",
+        "drug/polymer",
+        "surfactant_concentration",
+        "surfactant_HLB",
+        "aqueous/organic",
+        "pH",
+        "solvent_polarity_index"
+    ],
+    "drug_features": [
+        "mol_MW",
+        "mol_logP",
+        "mol_TPSA",
+        "mol_melting_point",
+        "mol_Hacceptors",
+        "mol_Hdonors",
+        "mol_heteroatoms"
+    ],
+    "all_features": [
+        "polymer_MW",
+        "LA/GA",
+        "drug/polymer",
+        "surfactant_concentration",
+        "surfactant_HLB",
+        "aqueous/organic",
+        "pH",
+        "solvent_polarity_index",
+        "mol_MW",
+        "mol_logP",
+        "mol_TPSA",
+        "mol_melting_point",
+        "mol_Hacceptors",
+        "mol_Hdonors",
+        "mol_heteroatoms"
+    ],
+    "targets": [
+        "particle_size",
+        "EE",
+        "LC"
+    ],
+    "feature_bounds": {
+        "polymer_MW": {
+            "min": 1.22,
+            "max": 98.0,
+            "mean": 30.8777,
+            "std": 24.90163934626219
+        },
+        "LA/GA": {
+            "min": 1.0,
+            "max": 3.0,
+            "mean": 1.26,
+            "std": 0.6759953379792623
+        },
+        "drug/polymer": {
+            "min": 0.005,
+            "max": 1.0,
+            "mean": 0.15572,
+            "std": 0.16951166224293723
+        },
+        "surfactant_concentration": {
+            "min": 0.0,
+            "max": 2.34,
+            "mean": 0.7906,
+            "std": 0.5937006353748027
+        },
+        "surfactant_HLB": {
+            "min": 0.0,
+            "max": 29.0,
+            "mean": 17.97,
+            "std": 8.992370503528381
+        },
+        "aqueous/organic": {
+            "min": 2.0,
+            "max": 40.0,
+            "mean": 4.936699999999999,
+            "std": 5.85772459960764
+        },
+        "pH": {
+            "min": -2.0,
+            "max": 1.0,
+            "mean": -0.08,
+            "std": 0.6143075267109604
+        },
+        "solvent_polarity_index": {
+            "min": 4.0,
+            "max": 7.2,
+            "mean": 5.278000000000002,
+            "std": 0.5404038893608777
+        },
+        "mol_MW": {
+            "min": 166.18,
+            "max": 853.92,
+            "mean": 367.4257999999999,
+            "std": 154.9831942416123
+        },
+        "mol_logP": {
+            "min": 0.12,
+            "max": 8.91,
+            "mean": 2.9613,
+            "std": 1.3368760925638123
+        },
+        "mol_TPSA": {
+            "min": 32.34,
+            "max": 221.29,
+            "mean": 80.7063,
+            "std": 44.27032005403697
+        },
+        "mol_melting_point": {
+            "min": 61.0,
+            "max": 300.0,
+            "mean": 165.36900000000003,
+            "std": 57.6885484758676
+        },
+        "mol_Hacceptors": {
+            "min": 1.0,
+            "max": 14.0,
+            "mean": 4.55,
+            "std": 2.713136766016618
+        },
+        "mol_Hdonors": {
+            "min": 0.0,
+            "max": 5.0,
+            "mean": 1.59,
+            "std": 1.40054102100408
+        },
+        "mol_heteroatoms": {
+            "min": 3.0,
+            "max": 15.0,
+            "mean": 6.38,
+            "std": 2.9431653406192155
+        }
+    },
+    "target_bounds": {
+        "particle_size": {
+            "min": 20.2,
+            "max": 1012.04,
+            "mean": 185.9668,
+            "std": 113.1603879802397
+        },
+        "EE": {
+            "min": 3.8,
+            "max": 98.9,
+            "mean": 65.32050000000001,
+            "std": 22.429078635430916
+        },
+        "LC": {
+            "min": 0.04,
+            "max": 36.51,
+            "mean": 8.6342,
+            "std": 7.523222657313496
+        }
+    },
+    "drug_catalog": [
+        {
+            "name": "Paclitaxel (MW 853.9, LogP 3.7)",
+            "values": {
+                "mol_MW": 853.92,
+                "mol_logP": 3.74,
+                "mol_TPSA": 221.29,
+                "mol_melting_point": 214.5,
+                "mol_Hacceptors": 14.0,
+                "mol_Hdonors": 4.0,
+                "mol_heteroatoms": 15.0
+            }
+        },
+        {
+            "name": "Ketoprofen/Hydrophobic Drug (MW 321.2, LogP 3.1)",
+            "values": {
+                "mol_MW": 321.16,
+                "mol_logP": 3.1,
+                "mol_TPSA": 61.69,
+                "mol_melting_point": 167.0,
+                "mol_Hacceptors": 3.0,
+                "mol_Hdonors": 2.0,
+                "mol_heteroatoms": 6.0
+            }
+        },
+        {
+            "name": "Hydrophobic Macrocycle (MW 625.0, LogP 4.2)",
+            "values": {
+                "mol_MW": 625.04,
+                "mol_logP": 4.2,
+                "mol_TPSA": 103.86,
+                "mol_melting_point": 300.0,
+                "mol_Hacceptors": 6.0,
+                "mol_Hdonors": 0.0,
+                "mol_heteroatoms": 9.0
+            }
+        },
+        {
+            "name": "Doxorubicin HCl (MW 400.4, LogP 0.6)",
+            "values": {
+                "mol_MW": 400.43,
+                "mol_logP": 0.64,
+                "mol_TPSA": 147.84,
+                "mol_melting_point": 123.5,
+                "mol_Hacceptors": 7.0,
+                "mol_Hdonors": 4.0,
+                "mol_heteroatoms": 10.0
+            }
+        },
+        {
+            "name": "Coumarin-6 / Fluorescent Marker (MW 256.1, LogP 2.0)",
+            "values": {
+                "mol_MW": 255.27,
+                "mol_logP": 2.97,
+                "mol_TPSA": 59.42,
+                "mol_melting_point": 182.5,
+                "mol_Hacceptors": 3.0,
+                "mol_Hdonors": 1.0,
+                "mol_heteroatoms": 4.0
+            }
+        },
+        {
+            "name": "Drug Profile #6 (MW=293.4, LogP=2.9)",
+            "values": {
+                "mol_MW": 293.37,
+                "mol_logP": 2.93,
+                "mol_TPSA": 78.29,
+                "mol_melting_point": 81.5,
+                "mol_Hacceptors": 5.0,
+                "mol_Hdonors": 0.0,
+                "mol_heteroatoms": 5.0
+            }
+        },
+        {
+            "name": "Curcumin (MW 372.6, LogP 3.8)",
+            "values": {
+                "mol_MW": 372.55,
+                "mol_logP": 3.81,
+                "mol_TPSA": 58.2,
+                "mol_melting_point": 253.0,
+                "mol_Hacceptors": 2.0,
+                "mol_Hdonors": 2.0,
+                "mol_heteroatoms": 4.0
+            }
+        },
+        {
+            "name": "Drug Profile #8 (MW=375.4, LogP=2.0)",
+            "values": {
+                "mol_MW": 375.4,
+                "mol_logP": 1.98,
+                "mol_TPSA": 83.8,
+                "mol_melting_point": 167.5,
+                "mol_Hacceptors": 6.0,
+                "mol_Hdonors": 2.0,
+                "mol_heteroatoms": 8.0
+            }
+        },
+        {
+            "name": "Drug Profile #9 (MW=272.8, LogP=2.2)",
+            "values": {
+                "mol_MW": 272.78,
+                "mol_logP": 2.19,
+                "mol_TPSA": 55.56,
+                "mol_melting_point": 155.5,
+                "mol_Hacceptors": 4.0,
+                "mol_Hdonors": 1.0,
+                "mol_heteroatoms": 5.0
+            }
+        },
+        {
+            "name": "Drug Profile #10 (MW=244.3, LogP=3.7)",
+            "values": {
+                "mol_MW": 244.27,
+                "mol_logP": 3.68,
+                "mol_TPSA": 37.3,
+                "mol_melting_point": 110.1,
+                "mol_Hacceptors": 1.0,
+                "mol_Hdonors": 1.0,
+                "mol_heteroatoms": 3.0
+            }
+        },
+        {
+            "name": "Drug Profile #11 (MW=359.4, LogP=0.8)",
+            "values": {
+                "mol_MW": 359.35,
+                "mol_logP": 0.76,
+                "mol_TPSA": 122.91,
+                "mol_melting_point": 88.5,
+                "mol_Hacceptors": 8.0,
+                "mol_Hdonors": 3.0,
+                "mol_heteroatoms": 10.0
+            }
+        },
+        {
+            "name": "Drug Profile #12 (MW=350.4, LogP=4.9)",
+            "values": {
+                "mol_MW": 350.44,
+                "mol_logP": 4.92,
+                "mol_TPSA": 46.34,
+                "mol_melting_point": 212.0,
+                "mol_Hacceptors": 5.0,
+                "mol_Hdonors": 0.0,
+                "mol_heteroatoms": 5.0
+            }
+        },
+        {
+            "name": "Coumarin-6 / Fluorescent Marker (MW 256.1, LogP 2.0)",
+            "values": {
+                "mol_MW": 256.1,
+                "mol_logP": 2.01,
+                "mol_TPSA": 90.71,
+                "mol_melting_point": 217.0,
+                "mol_Hacceptors": 5.0,
+                "mol_Hdonors": 2.0,
+                "mol_heteroatoms": 7.0
+            }
+        },
+        {
+            "name": "Drug Profile #14 (MW=284.8, LogP=3.1)",
+            "values": {
+                "mol_MW": 284.75,
+                "mol_logP": 3.15,
+                "mol_TPSA": 32.67,
+                "mol_melting_point": 132.0,
+                "mol_Hacceptors": 2.0,
+                "mol_Hdonors": 0.0,
+                "mol_heteroatoms": 4.0
+            }
+        },
+        {
+            "name": "Drug Profile #15 (MW=263.4, LogP=2.6)",
+            "values": {
+                "mol_MW": 263.38,
+                "mol_logP": 2.63,
+                "mol_TPSA": 32.7,
+                "mol_melting_point": 180.5,
+                "mol_Hacceptors": 3.0,
+                "mol_Hdonors": 1.0,
+                "mol_heteroatoms": 3.0
+            }
+        },
+        {
+            "name": "Drug Profile #16 (MW=467.0, LogP=4.1)",
+            "values": {
+                "mol_MW": 466.98,
+                "mol_logP": 4.1,
+                "mol_TPSA": 80.67,
+                "mol_melting_point": 196.0,
+                "mol_Hacceptors": 5.0,
+                "mol_Hdonors": 1.0,
+                "mol_heteroatoms": 7.0
+            }
+        },
+        {
+            "name": "Drug Profile #17 (MW=628.8, LogP=4.3)",
+            "values": {
+                "mol_MW": 628.81,
+                "mol_logP": 4.33,
+                "mol_TPSA": 120.0,
+                "mol_melting_point": 125.5,
+                "mol_Hacceptors": 5.0,
+                "mol_Hdonors": 4.0,
+                "mol_heteroatoms": 9.0
+            }
+        },
+        {
+            "name": "Drug Profile #18 (MW=252.3, LogP=2.6)",
+            "values": {
+                "mol_MW": 252.27,
+                "mol_logP": 2.64,
+                "mol_TPSA": 63.4,
+                "mol_melting_point": 215.5,
+                "mol_Hacceptors": 2.0,
+                "mol_Hdonors": 1.0,
+                "mol_heteroatoms": 4.0
+            }
+        },
+        {
+            "name": "Drug Profile #19 (MW=602.8, LogP=8.9)",
+            "values": {
+                "mol_MW": 602.81,
+                "mol_logP": 8.91,
+                "mol_TPSA": 111.9,
+                "mol_melting_point": 132.0,
+                "mol_Hacceptors": 6.0,
+                "mol_Hdonors": 3.0,
+                "mol_heteroatoms": 6.0
+            }
+        },
+        {
+            "name": "Drug Profile #20 (MW=317.3, LogP=4.3)",
+            "values": {
+                "mol_MW": 317.34,
+                "mol_logP": 4.3,
+                "mol_TPSA": 66.4,
+                "mol_melting_point": 280.0,
+                "mol_Hacceptors": 2.0,
+                "mol_Hdonors": 2.0,
+                "mol_heteroatoms": 4.0
+            }
+        },
+        {
+            "name": "Drug Profile #21 (MW=316.4, LogP=3.6)",
+            "values": {
+                "mol_MW": 316.35,
+                "mol_logP": 3.6,
+                "mol_TPSA": 57.15,
+                "mol_melting_point": 116.5,
+                "mol_Hacceptors": 5.0,
+                "mol_Hdonors": 1.0,
+                "mol_heteroatoms": 5.0
+            }
+        },
+        {
+            "name": "Drug Profile #22 (MW=705.6, LogP=5.6)",
+            "values": {
+                "mol_MW": 705.65,
+                "mol_logP": 5.58,
+                "mol_TPSA": 104.7,
+                "mol_melting_point": 166.2,
+                "mol_Hacceptors": 12.0,
+                "mol_Hdonors": 0.0,
+                "mol_heteroatoms": 14.0
+            }
+        },
+        {
+            "name": "Drug Profile #23 (MW=296.8, LogP=3.3)",
+            "values": {
+                "mol_MW": 296.84,
+                "mol_logP": 3.27,
+                "mol_TPSA": 32.34,
+                "mol_melting_point": 242.0,
+                "mol_Hacceptors": 2.0,
+                "mol_Hdonors": 1.0,
+                "mol_heteroatoms": 4.0
+            }
+        },
+        {
+            "name": "Drug Profile #24 (MW=392.4, LogP=2.1)",
+            "values": {
+                "mol_MW": 392.41,
+                "mol_logP": 2.08,
+                "mol_TPSA": 100.59,
+                "mol_melting_point": 267.5,
+                "mol_Hacceptors": 6.0,
+                "mol_Hdonors": 3.0,
+                "mol_heteroatoms": 9.0
+            }
+        },
+        {
+            "name": "Drug Profile #25 (MW=298.4, LogP=2.8)",
+            "values": {
+                "mol_MW": 298.38,
+                "mol_logP": 2.84,
+                "mol_TPSA": 46.15,
+                "mol_melting_point": 87.0,
+                "mol_Hacceptors": 5.0,
+                "mol_Hdonors": 0.0,
+                "mol_heteroatoms": 5.0
+            }
+        },
+        {
+            "name": "Drug Profile #26 (MW=272.4, LogP=0.1)",
+            "values": {
+                "mol_MW": 272.35,
+                "mol_logP": 0.12,
+                "mol_TPSA": 118.56,
+                "mol_melting_point": 61.0,
+                "mol_Hacceptors": 4.0,
+                "mol_Hdonors": 1.0,
+                "mol_heteroatoms": 6.0
+            }
+        },
+        {
+            "name": "Drug Profile #27 (MW=749.0, LogP=1.9)",
+            "values": {
+                "mol_MW": 749.0,
+                "mol_logP": 1.9,
+                "mol_TPSA": 180.08,
+                "mol_melting_point": 114.0,
+                "mol_Hacceptors": 14.0,
+                "mol_Hdonors": 5.0,
+                "mol_heteroatoms": 14.0
+            }
+        },
+        {
+            "name": "Drug Profile #28 (MW=414.6, LogP=5.7)",
+            "values": {
+                "mol_MW": 414.63,
+                "mol_logP": 5.71,
+                "mol_TPSA": 38.69,
+                "mol_melting_point": 205.5,
+                "mol_Hacceptors": 3.0,
+                "mol_Hdonors": 1.0,
+                "mol_heteroatoms": 3.0
+            }
+        },
+        {
+            "name": "Drug Profile #29 (MW=166.2, LogP=1.6)",
+            "values": {
+                "mol_MW": 166.18,
+                "mol_logP": 1.6,
+                "mol_TPSA": 46.53,
+                "mol_melting_point": 146.0,
+                "mol_Hacceptors": 3.0,
+                "mol_Hdonors": 1.0,
+                "mol_heteroatoms": 3.0
+            }
+        }
+    ],
+    "n_samples": 100
+}

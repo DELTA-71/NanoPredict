@@ -1,0 +1,116 @@
+{
+    "particle_size": {
+        "Ridge_Regression": {
+            "R2_Test": -0.0983,
+            "R2_CV": 0.0134,
+            "MAE": 53.4597,
+            "RMSE": 64.3047
+        },
+        "SVR": {
+            "R2_Test": 0.3684,
+            "R2_CV": 0.3849,
+            "MAE": 35.8512,
+            "RMSE": 48.7655
+        },
+        "Random_Forest": {
+            "R2_Test": 0.3585,
+            "R2_CV": 0.2282,
+            "MAE": 36.5936,
+            "RMSE": 49.1456
+        },
+        "Extra_Trees": {
+            "R2_Test": 0.5173,
+            "R2_CV": -0.0169,
+            "MAE": 33.7574,
+            "RMSE": 42.6319
+        },
+        "Gradient_Boosting": {
+            "R2_Test": 0.1437,
+            "R2_CV": 0.0421,
+            "MAE": 44.3216,
+            "RMSE": 56.781
+        },
+        "XGBoost": {
+            "R2_Test": 0.3282,
+            "R2_CV": 0.0263,
+            "MAE": 39.6606,
+            "RMSE": 50.2923
+        }
+    },
+    "EE": {
+        "Ridge_Regression": {
+            "R2_Test": 0.3048,
+            "R2_CV": 0.0657,
+            "MAE": 18.8944,
+            "RMSE": 23.5451
+        },
+        "SVR": {
+            "R2_Test": 0.4463,
+            "R2_CV": 0.1607,
+            "MAE": 15.9739,
+            "RMSE": 21.0117
+        },
+        "Random_Forest": {
+            "R2_Test": 0.6158,
+            "R2_CV": 0.1749,
+            "MAE": 13.1283,
+            "RMSE": 17.5033
+        },
+        "Extra_Trees": {
+            "R2_Test": 0.6436,
+            "R2_CV": 0.1994,
+            "MAE": 12.3113,
+            "RMSE": 16.8579
+        },
+        "Gradient_Boosting": {
+            "R2_Test": 0.6579,
+            "R2_CV": 0.0465,
+            "MAE": 14.0542,
+            "RMSE": 16.5157
+        },
+        "XGBoost": {
+            "R2_Test": 0.6258,
+            "R2_CV": 0.0497,
+            "MAE": 14.5603,
+            "RMSE": 17.2737
+        }
+    },
+    "LC": {
+        "Ridge_Regression": {
+            "R2_Test": 0.7063,
+            "R2_CV": 0.5755,
+            "MAE": 2.3762,
+            "RMSE": 3.0031
+        },
+        "SVR": {
+            "R2_Test": 0.7228,
+            "R2_CV": 0.5076,
+            "MAE": 2.0639,
+            "RMSE": 2.918
+        },
+        "Random_Forest": {
+            "R2_Test": 0.836,
+            "R2_CV": 0.6044,
+            "MAE": 1.4407,
+            "RMSE": 2.244
+        },
+        "Extra_Trees": {
+            "R2_Test": 0.8513,
+            "R2_CV": 0.6095,
+            "MAE": 1.1707,
+            "RMSE": 2.1368
+        },
+        "Gradient_Boosting": {
+            "R2_Test": 0.8392,
+            "R2_CV": 0.6113,
+            "MAE": 1.669,
+            "RMSE": 2.2225
+        },
+        "XGBoost": {
+            "R2_Test": 0.8553,
+            "R2_CV": 0.6537,
+            "MAE": 1.3347,
+            "RMSE": 2.1078
+        }
+    }
+}
